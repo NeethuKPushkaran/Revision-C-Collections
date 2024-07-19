@@ -213,3 +213,31 @@ for(int i = 0; i < grid.GetLength(0); i++)
         Console.WriteLine(grid[i,j]);
     }
 }
+//-------------------------------------------------
+//Boxing and Unboxing
+
+int number2 = 42;            // Value type variable
+object boxedNumber = number2;   // Boxing
+
+int unboxedNumber = (int)boxedNumber;  // Unboxing
+
+Console.WriteLine($"Original number: {number2}");
+Console.WriteLine($"Boxed number: {boxedNumber}");
+Console.WriteLine($"Unboxed number: {unboxedNumber}");
+
+//-------------------------------------------------------
+
+//String Interpolation
+
+Console.WriteLine("String Interpolation");
+string name2 = "Jenny";
+int age2 = 31;
+Console.WriteLine($"\n{name2} is {age2} years old.");
+
+//Composite formatting
+
+Console.WriteLine("Composite formatting");
+string student = "Jim";
+int class1 = 8;
+string message1 = string.Format("\nStudent {0} is studying in {1}th standard.", student, class1);
+Console.WriteLine(message1);
